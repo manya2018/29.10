@@ -1,5 +1,11 @@
-B=[int(n) for n in input().split()]
-g=A[0]
-B.
-for i in range(len(A)):
-    d=0
+A=[int(n) for n in input().split()]
+def  is_sorted(A):
+    B=sorted(A)
+    n=0
+    for i in range (len(A)):
+        if A[i]==B[i]:
+            n+=1
+    if n==len(A):
+        print('true')
+    else:
+        print('false')
