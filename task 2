@@ -1,0 +1,13 @@
+B=[int(n) for n in input().split()]
+def cumsum(A):
+    C=[]
+    g=A[0]
+    A.pop(0)
+    C.append(g)
+    s=0
+    for i in range(len(A)):
+        s=s+A[i]+g
+        C.append(s)
+        s-=g
+    return(C)
+print(cumsum(B))
