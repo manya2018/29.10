@@ -1,0 +1,11 @@
+a=int(input())
+B=[] 
+for i in range(a): 
+    B.append(list(map(int, input().split())))
+def nested_sum(A):
+    sum=0
+    for i in range (len(A)):
+        for j in range(len(A)):
+            sum=sum+A[i][j]  
+    return(sum)  
+print(nested_sum(B))
