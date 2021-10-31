@@ -1,0 +1,7 @@
+B=[int(n) for n in input().split()]
+def middle(A):
+    A.pop(0)
+    n=len(A)
+    A.pop(n-1)
+middle(B)
+print(B)
