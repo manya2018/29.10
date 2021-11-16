@@ -1,11 +1,6 @@
 A=[int(n) for n in input().split()]
 def  is_sorted(A):
     B=sorted(A)
-    n=0
-    for i in range (len(A)):
-        if A[i]==B[i]:
-            n+=1
-    if n==len(A):
-        print('true')
-    else:
-        print('false')
+    B==True
+    print(B==A)
+print(is_sorted(A))  
