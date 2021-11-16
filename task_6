@@ -1,0 +1,13 @@
+A=list(input().split())
+B=list(input().split())
+def  is_anagram(word1, word2):
+    n=0
+    for i in range(len(word1)):
+        for j in range(len(word2)):
+            if A[i]==B[j]:
+                n+=1
+    if n==(len(word1)) or n==(len(word2)):
+        print('да,являются')
+    else:
+        print('нет, не являются')
+print(is_anagram(A, B)) 
