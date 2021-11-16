@@ -1,0 +1,12 @@
+A=list(input().split())
+def  has_duplicates(s):
+    n=0
+    for i in range(len(s)):
+        for j in range(len(s)):
+             if s[i]==s[j]:
+                 n+=1
+    if n>len(s):
+        print('в последовательности есть повторяющиеся буквы')
+    else:
+        print('в последовательности нет повторяющихся символов')
+print(has_duplicates(A)) 
